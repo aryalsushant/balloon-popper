@@ -28,7 +28,7 @@ function initGame() {
 
 function startGame() {
     if (gameInterval) clearInterval(gameInterval);
-    gameInterval = setInterval(createBalloon, 600);
+    gameInterval = setInterval(createBalloon, 450);
 }
 
 function createBalloon() {
