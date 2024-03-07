@@ -28,7 +28,7 @@ function initGame() {
 
 function startGame() {
     if (gameInterval) clearInterval(gameInterval);
-    gameInterval = setInterval(createBalloon, 450);
+    gameInterval = setInterval(createBalloon, 600);
 }
 
 function createBalloon() {
@@ -63,7 +63,7 @@ function createBalloon() {
                 endGame();
             }
         } else {
-            balloon.style.bottom = `${currentPosition + 2}px`;
+            balloon.style.bottom = `${currentPosition + 3}px`;
         }
     }, 10);
 }
