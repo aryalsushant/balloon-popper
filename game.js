@@ -63,7 +63,7 @@ function createBalloon() {
                 endGame();
             }
         } else {
-            balloon.style.bottom = `${currentPosition + 4}px`;
+            balloon.style.bottom = `${currentPosition + 5}px`;
         }
     }, 10);
 }
