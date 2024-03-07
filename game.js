@@ -70,7 +70,8 @@ function createBalloon() {
 
 function endGame() {
     clearInterval(gameInterval); // Stop creating balloons
-    gameContainer.innerHTML = `<div id="endGameScreen">Game Ended<br>Your Score: ${currentScore}<br>High Score: ${highScore}<br>Click anywhere to restart</div>`;
+    gameContainer.innerHTML = `<div id="endGameScreen">Game Ended<br>Your Score: ${currentScore}<br>High Score: ${highScore}<br>Click anywhere to restart
+    <br> hint: tap the top of the balloon to increase its chances of popping</div>`;
 
     // Listen for a click to restart the game
     gameContainer.addEventListener('click', initGame);
